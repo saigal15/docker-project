@@ -1,3 +1,3 @@
 module nom-du-module
 
-go 1.23.5
+go 1.20
