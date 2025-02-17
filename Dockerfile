@@ -2,7 +2,7 @@
 FROM golang:latest
 
 # Créer un répertoire de travail dans le conteneur
-WORKDIR /app
+WORKDIR /docker-project
 
 # Copier le code source dans le conteneur
 COPY . .
