@@ -31,4 +31,4 @@ jobs:
         run: go build -o docker-project .
 
       - name: Run application
-        run: C:\Users\Momms\OneDrive\Documents\projet\Docker-Project\docker-project
+        run: ./docker-project
