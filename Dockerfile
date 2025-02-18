@@ -1,5 +1,5 @@
 # Utilisation d'une image officielle de Go
-FROM golang:go1.23
+FROM golang:1.23
 
 # Créer un répertoire de travail dans le conteneur
 WORKDIR /docker-project
