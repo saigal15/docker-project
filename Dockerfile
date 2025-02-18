@@ -17,7 +17,7 @@ RUN go mod tidy
 RUN go build -o docker-project .
 
 # Exposer le port 8080 pour l'application
-EXPOSE 8080
+EXPOSE 8081
 
 # Lancer l'application Go
 CMD ["./docker-project"]
