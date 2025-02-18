@@ -1,3 +1,3 @@
-module nom-du-module
+module docker-project
 
 go 1.20
