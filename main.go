@@ -2,15 +2,14 @@ package main
 
 import (
     "fmt"
+    "github.com/gorilla/mux"
     "net/http"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hello, Docker and Go!")
-}
-
 func main() {
-    http.HandleFunc("/", handler)
-    fmt.Println("Server started at :8080")
-    http.ListenAndServe(":8080", nil)
+    r := mux.NewRouter()
+    r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprintf(w, "Hello, world!")
+    })
+    http.ListenAndServe(":8080", r)
 }
